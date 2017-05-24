@@ -1,5 +1,5 @@
 <?php
-
+Route::resource('todo', 'TodoController');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
