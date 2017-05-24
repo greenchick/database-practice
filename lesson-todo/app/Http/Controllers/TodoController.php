@@ -3,11 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Todo;
 use App\Http\Requests;
 
 class TodoController extends Controller
 {
+
+  private $todo;
+
+  public function __construct(Todo $todo)
+    {
+      $this->todo = $todo;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,6 +22,7 @@ class TodoController extends Controller
      */
     public function index()
     {
-      return 'hello world!!';
+      $todos = $this->todo->all();
+      return view('todo.index', compact('todos'));
     }
 }
