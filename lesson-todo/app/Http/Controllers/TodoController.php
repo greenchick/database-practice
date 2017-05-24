@@ -52,4 +52,11 @@ class TodoController extends Controller
       $this->todo->where('id',$id)->update(['title' => $input['title']]);
       return redirect()->to('todo');
     }
+    public function destroy($id)
+    {
+      $data = $this->todo->find($id);
+      $data->delete();
+
+      return redirect()->to('todo');
+    }
 }
