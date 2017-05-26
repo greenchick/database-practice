@@ -15,9 +15,9 @@ class TodosTableSeeder extends Seeder
 
         DB::table('todos')->insert([
           [
-            'title' => 'フレームワークを終わらせる',
-            'created_at' => '2015-04-06 23:59:59',
-            'updated_at' => '2015-04-07 23:59:59',
+            'title' => 'chaged for my interest',
+            'created_at' => '1994-02-15 23:59:59',
+            'updated_at' => '1994-02-15 23:59:59',
           ],
           [
             'title' => 'Unixオペレーションに慣れる',
