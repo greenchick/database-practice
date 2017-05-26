@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
   <h2 class="page-header">ToDo一覧</h2>
-  <p class="pull-right"><a class="btn btn-sccess" href="/todo/create">追加</a></p>
+  <p class="pull-right"><a class="btn btn-success" href="/todo/create">追加</a></p>
   <table class="table table-hover todo-table">
     <thead>
       <tr>
